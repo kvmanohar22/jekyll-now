@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+2nd year undergraduate,
+Department of Mathematics, 
+IIT Kharagpur
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Robotics Enthusiast
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[kvmanohar22@iitkgp.ac.in](mailto:kvmanohar22@iitkgp.ac.in)
