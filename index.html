@@ -1,21 +1,12 @@
 ---
 layout: default
 ---
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
-
-body {
-    font-family: Ubuntu, "times new roman", times, roman, serif;
-}
 
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
 
 	  <div class="date">
 	     {{ post.date | date: "%B %e, %Y" }}
