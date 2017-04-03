@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
+body {
+    font-family: Ubuntu, "times new roman", times, roman, serif;
+}
 
 <div class="posts">
   {% for post in site.posts %}
@@ -12,7 +17,10 @@ layout: default
         {{ post.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+	  <div class="date">
+	     {{ post.date | date: "%B %e, %Y" }}
+	  </div>      
+
     </article>
   {% endfor %}
 </div>
