@@ -3,10 +3,9 @@ layout: page
 title: About
 permalink: /about/
 ---
+Hey there!, <br> 
+I am Kv Manohar, an undergraduate student IIT Kharagpur, India majoring in Mathematics and Computing course from the Department of Mathematics.<br> 
 
-2nd year undergraduate <br>
-Department of Mathematics <br> 
-IIT Kharagpur
 
 ### Fields of Interest
 
