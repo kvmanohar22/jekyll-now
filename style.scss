@@ -13,13 +13,19 @@
 /* BASE RULES */
 /**************/
 
+@font-face {
+  font-family : Ubuntu;
+  src : url(_fonts/Ubuntu-Light.ttf);
+}
+
+
 html {
   font-size: 100%;
 }
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $Ubuntu-Light;
   color: $darkGray;
 }
 
