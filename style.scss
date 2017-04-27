@@ -14,10 +14,11 @@
 /**************/
 
 @font-face {
-  font-family : Ubuntu;
-  src : url(_fonts/Ubuntu-Light.ttf);
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ubuntu'), url(_fonts/Ubuntu-Light.ttf) format('ttf');
 }
-
 
 html {
   font-size: 100%;
@@ -25,7 +26,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $Ubuntu-Light;
+  font: 18px/1.4 $Ubuntu;
   color: $darkGray;
 }
 
