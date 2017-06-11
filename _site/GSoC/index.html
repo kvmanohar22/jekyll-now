@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GSoC – KV Manohar – </title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Hey there !! 
+I’m applying for Google Summer of Code 2017 under OpenCV where
+I plan to work on the task of object detection by developing highly compact models. You can find my proposal here. I will blog the progress of my GSoC project here!
+Yayy! Got selected to Google Summer of Code 2017. Looking forward to a great 
+summer !
+
+" />
+    <meta property="og:description" content="Hey there !! 
+I’m applying for Google Summer of Code 2017 under OpenCV where
+I plan to work on the task of object detection by developing highly compact models. You can find my proposal here. I will blog the progress of my GSoC project here!
+Yayy! Got selected to Google Summer of Code 2017. Looking forward to a great 
+summer !
+
+" />
+    
+    <meta name="author" content="KV Manohar" />
+
+    
+    <meta property="og:title" content="GSoC" />
+    <meta property="twitter:title" content="GSoC" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" /> 
+    <link rel="alternate" type="application/rss+xml" title="KV Manohar - " href="/feed.xml" />
+  
+   <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">-->
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://s29.postimg.org/g02v2d713/14894383_647646338729073_9172075265_o.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">KV Manohar</a></h1>
+            <p class="site-description"></p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
+<article class="post">
+  <h1>GSoC</h1>
+
+  <div class="entry">
+    <p>Hey there !! <br /><br />
+I’m applying for Google Summer of Code 2017 under <a href="https://www.opencv.org">OpenCV</a> where
+I plan to work on the task of object detection by developing highly compact models. You can find my proposal <a href="https://docs.google.com/document/d/1zUxaQ4WYM211WaS17Dbe1jHlNeN7Twt0Aws5tt1zKXU/edit?usp=sharing">here</a>. I will blog the progress of my GSoC project here!<br />
+Yayy! Got selected to Google Summer of Code 2017. Looking forward to a great 
+summer !</p>
+
+<h2 id="community-bonding-period">Community Bonding Period</h2>
+<p>As outlined in my proposal I’ll be working on the task of Object Detection which
+involves generating bounding boxes for the detected objects in an image. I’ve 
+divided my entire timeline into three major phases which includes: <br /></p>
+<ul>
+  <li>Training a Deep Learning Model on ImageNet dataset for Image Classification</li>
+  <li>Adding additional layers to the above trained model and retraining on PASCAL
+dataset</li>
+  <li>Implement Deep Compression methods to reduce the size of the model</li>
+</ul>
+
+<p>During this period I spent my time in setting up my developement environment on the server by installing <a href="https://github.com/BVLC/caffe">Caffe</a> Deep Learning framework, downloading the humongous <a href="http://image-net.org/">ILSVRC-2012 dataset</a>, reading up the research papers outlined in my proposal. 
+Caffe is a great framework but what it lacks is documentation and tutorials for a beginner :(. Constrained to implement my project in C++,  I had to go through the <a href="http://caffe.berkeleyvision.org/doxygen/annotated.html">official API</a> and figure out myself what’s happening under the hood. 
+Luckily I had a bit of experience working on Google Protocol Buffers which is largely used in Caffe for defining various core classes. 
+And since I had some time to kill during this period, I thought “Hey, why not create few tutorials ?” and so began the saga of writing few tutorials aimed to kick start the understanding of Caffe framework which I’ll be releasing pretty soon once I complete them. This pretty much sums up my Community Bonding Period.</p>
+
+<h2 id="phase-1-of-gsoc--training-squeezenet-model-on-imagenet">Phase 1 of GSoC : Training SqueezeNet Model on ImageNet</h2>
+<p>In general Deep Learning models take up huge chunk of memory to hold the learnable parameters. But SqueezeNet is designed so as to reduce the number of parameters in the following ways:</p>
+<ul>
+  <li>Clever use of <strong>1x1</strong> kernels instead of <strong>3x3</strong> kernels which reduce the number of parameters of that kernel by a factor of 9 !</li>
+  <li>Usage of global pooling instead of fully connected layers for the final classification task</li>
+  <li>Decreasing the number of input channels to <strong>3x3</strong> kernels by introducing squeeze module</li>
+  <li>Downsampling the spatial resolution late in the network so that convolutional layers have large activation maps. This intuitively ensures that the kernels early and deeper in the network can learn more features</li>
+</ul>
+
+<p>This leads to a network with approx. <strong>1.2 million</strong> (<strong>4.78MB</strong> size uncompressed network) parameters which is considerably less compared to other popular networks such as AlexNet, GoogleNet, ZFNet, VGGNet, ResNet all of which have orders of \(10s\) of millions of parameters.</p>
+
+<p><img src="./../images/Net_Det.png" alt="Architecture" />
+<strong>Fig 1</strong>: <strong>Left</strong> Architecture of SqueezeNet. <strong>Right</strong> Architecture of SqueezeDet.</p>
+
+<p>Now let’s come to the part of training SqueezeNet for Image Classification task. ImageNet is <strong>the</strong> biggest dataset of images out there of size nearly <strong>1.2 TB</strong> ! ILSVRC (ImageNet Large Scale Visual Recognition Competition) is a collection of subset of images from ImageNet with nearly 1.2 million images (approx. 1k images per class). There were number of challenges that I faced while fine tuning the right set of hyperparameters to kick start the training. One key problem was with <strong>Dead ReLUs</strong> deeper in the network which continously output \(0\). This leads to the network to a never changing state. Catching this problem was pretty easy by analyzing the training loss as a function of number of iterations and analyzing the distributions of activation maps of Convolutional layers. Here are some of the visualizations during the training phase.</p>
+
+<p><img src="./../images/failed_training.jpg" alt="Failed Training" /> 
+<strong>Fig 2</strong>: Training which didn’t converge. <strong>Top row:</strong> Histogram distribution of activation maps of conv layers at the top of the network. <strong>Middle row:</strong> Loss function which didn’t converge. <strong>Bottom row:</strong> Histogram distribution of activation maps of conv layers towards the end of the network. The difference between distributions in the top and bottom row clearly indicate the problem with <strong>Dead ReLUs</strong>.</p>
+
+<p><img src="./../images/successful_training.jpg" alt="Successful Training" />
+<strong>Fig 3</strong>: Training which did converge !</p>
+
+<p>So, why the problem with <strong>Dead ReLUs</strong> and how to get over it? There could be many reasons such as bad weight initialization (You might want to have a look at <a href="https://github.com/kvmanohar22/DeepNets">this</a>), high learning rate and so on. The solution to this could be to use Leaky ReLU (should be experimented, worked in my case), try with smaller learning rate. Let’s dive into some math here.
+Mathematically,</p>
+
+<p>Let the activation map of Conv layer be denoted by \(A_i\) for the \(i\) th kernel. Here \(x_{jk}\) is the input tensor to the conv layer.</p>
+
+<p>\(A_i = \sum W_i*x_{jk}\)</p>
+
+<p>Applying ReLU non-linearity element-wise results in \(B_i\) where,</p>
+
+<p>\(B_i = max(0, A_i) \)</p>
+
+<p>During the backward pass, we have \(\Large \frac{\partial{L}}{\partial{B_i}}\) coming from the bottom layer (\(L\) being the loss function). To update the weights \(W_i\) we need to compute \(\Large \frac{\partial{L}}{\partial{W_i}}\) which is done as follows:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\frac{\partial{L}}{\partial{A_i}}=\frac{\partial{L}}{\partial{B_i}} \frac{\partial{B_i}}{\partial{A_i}} \quad and \quad \frac{\partial{B_i}}{\partial{A_i}} = \begin{cases}1 & \text{if $A_i$ $\gt$ $0$} \\[2ex]
+0 & \text{otherwise}
+\end{cases} %]]></script>
+
+<p>Now,</p>
+
+<script type="math/tex; mode=display">\frac{\partial{L}}{\partial{W_i}} = \frac{\partial{L}}{\partial{A_i}}\frac{\partial{A_i}}{\partial{W_i}} \quad and \quad \frac{\partial{A_i}}{\partial{W_i}} = x_{jk}</script>
+
+<p>Finally the weight update rule (without momentum and \(\alpha\) being learning rate) gives us:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+W_i = 
+\begin{cases}
+W_i - \Large \alpha x_{jk} \frac{\partial{L}}{\partial{B_{i}}} & \text{if $A_{i}$ $\gt$ $0$} \\[2ex]
+W_i & \text{otherwise}
+\end{cases} %]]></script>
+
+<p>This above weight update rule clearly indicates why the weights of <strong>Dead ReLUs</strong> never change and thus the constant loss \(vs\) iterations in <strong>Fig 2</strong> above.</p>
+
+<h2 id="phase-2-of-gsoc--training-squeezedet-model-on-pascal">Phase 2 of GSoC : Training SqueezeDet Model on PASCAL</h2>
+
+<p>Loss function is as follows:</p>
+
+<script type="math/tex; mode=display">loss = \frac{\lambda_{bbox}}{N_{obj}}\sum_{i=1}^{W}\sum_{j=1}^{H}\sum_{k=1}^{K}I_{ijk}[(\delta x_{ijk}-\delta x_{ijk}^{G})^2+(\delta y_{ijk}-\delta y_{ijk}^{G})^2 \\ 
++(\delta w_{ijk}-\delta w_{ijk}^{G})^2+(\delta h_{ijk}-\delta h_{ijk}^{G})^2] \\ 
++\sum_{i=1}^{W}\sum_{j=1}^{H}\sum_{k=1}^{K}\frac{\lambda_{conf}^{+}}{N_{obj}}I_{ijk}(\gamma_{ijk}-\gamma_{ijk}^{G})^2+\frac{\lambda_{conf}^{-}}{WHK-N_{obj}}\overline{I}_{ijk}\gamma_{ijk}^{2}\\
++\frac{1}{N_{obj}}\sum_{i=1}^{W}\sum_{j=1}^{H}\sum_{k=1}^{K}\sum_{c=1}^{C}I_{ijk}l_{c}^{G}\log(p_{c})</script>
+
+<p>This can be split into three major parts where the first part contains <strong>bounding box regression</strong>, the second part contains <strong>confidence regression</strong> and the last part is just the <strong>cross entropy loss</strong> for classification.</p>
+
+<h2 id="phase-3-of-gsoc--compress-and-re-train-the-initial-network">Phase 3 of GSoC : Compress and re-train the initial Network</h2>
+<p>This involves application of three major methods:</p>
+<ul>
+  <li>Network Pruning</li>
+  <li>Quantization</li>
+  <li>Huffman Coding</li>
+</ul>
+
+<!-- <br><br>
+<div id="disqus_thread"></div>
+<script>
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://kvmanohar22-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:kvmanohar22@iitkgp.ac.in"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/kvmanohar22"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/kvmanohar22"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/kvmanohar22"><i class="svg-icon linkedin"></i></a>
+
+
+<a href="https://www.twitter.com/kvmanohar22"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

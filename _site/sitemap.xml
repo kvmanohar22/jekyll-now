@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/YOLO/</loc>
+<lastmod>2017-03-18T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/GSoC/</loc>
+<lastmod>2017-04-04T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/Weight_Init/</loc>
+<lastmod>2017-04-21T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/404/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/about/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/new.html</loc>
+<lastmod>2017-04-27T12:12:18+05:30</lastmod>
+</url>
+</urlset>
