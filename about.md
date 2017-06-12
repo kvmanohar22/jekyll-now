@@ -1,6 +1,6 @@
 ---
 layout: page
-title: /home/kv/about
+title: About
 permalink: /about/
 ---
 

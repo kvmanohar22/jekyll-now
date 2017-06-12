@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} {% endif %}{{ site.name }} {{ site.description }}</title>
+    <title>{{ site.name }}/{% if page.title %}{{ page.title }} {% endif %}
+    </title>
 
     {% include meta.html %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <title>/home/kv</title>
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" /> 
@@ -21,16 +23,20 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+          <a href="/"><font size="15" color="black">~</font></a>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+<!--           <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1> -->
+<!--             <p class="site-description">{{ site.description }}</p>
           </div>
+ --> 
 
           <nav>
-            <a href="{{ site.baseurl }}/">~/blog</a>
             <a href="{{ site.baseurl }}/about">~/about</a>
+            <a href="{{ site.baseurl }}/">~/blog</a>
+            <a href="https://github.com/kvmanohar22">~/github</a>
+            <a href="https://www.linkedin.com/in/kvmanohar22/">~/linkedin</a>
+            <a href="mailto:kvmanohar22@gmail.com">~/mail</a>
           </nav>
         </header>
       </div>
@@ -40,13 +46,15 @@
       {{ content }}
     </div>
 
+<!-- 
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
         </footer>
       </div>
-    </div>
+    </div> 
+-->
 
     {% include analytics.html %}
   </body>

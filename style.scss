@@ -126,6 +126,7 @@ img {
 .date {
   font-style: italic;
   color: $gray;
+  display: inline;
 }
 
 // Specify the color of the selection
@@ -250,23 +251,24 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
+  padding-bottom: 0em;
   border-bottom: 0px solid $lightGray;
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
+  padding-bottom: 0em;
   border-bottom: none;
 }
 
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 0px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 22px;
+    font-size: 12px;
     font-style: italic;
+    display: inline;
   }
 
   .comments {
