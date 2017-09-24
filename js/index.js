@@ -16,9 +16,6 @@ $(function () {
         'in-ch',
     ]
 
-    const visited_states_in_us = [
-    ];
-
     function getDrilldown(data, visited) {
         $.each(data, function(i) {
             this.value = visited.indexOf(this.properties[property]);
@@ -39,10 +36,6 @@ $(function () {
     $.each(world_data, function (i) {
 
         if (this.properties[property] == 'us') {
-            this.drilldown = getDrilldown(
-                us_data,
-                visited_states_in_us);
-            this.drilldownLabel = 'United States of America';
         } else if (this.properties[property] == 'in') {
             this.drilldown = getDrilldown(
                 india_data,
@@ -85,11 +78,11 @@ $(function () {
             }
         },
         title : {
-            text : 'Around the world in X days',
+            text : 'KV\'s Travels around the world !',
         },
 
         subtitle: {
-            text: 'World',
+            text: '-------',
         },
 
         mapNavigation: {
