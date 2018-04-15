@@ -115,7 +115,7 @@ Discriminator here is just concerned with classifying whether an image is real o
 We can redefine the discriminator loss objective to include labels. This has proven to improve the subjective sample quality.\\
 **eg** : on MNIST or CIFAR-10 (both having 10 classes each) 
 
-Implementation of the above losses in python and tensorflow is as follows:
+Implementation of the above losses in `python` and `tensorflow` is as follows:
 
 <pre>
   <code class="language-python">
@@ -155,7 +155,7 @@ Implementation of the above losses in python and tensorflow is as follows:
   </code>
 </pre>
 
-<pre>
+<!-- <pre>
   <code class="language-python">
   def GAN_loss_with_labels(true_logit, fake_logit):
       """
@@ -177,7 +177,7 @@ Implementation of the above losses in python and tensorflow is as follows:
   </code>
 </pre>
 
-
+ -->
 <a name='exp_mnist'></a>
 ## Experiments of VAEs and GANs on MNIST
 
