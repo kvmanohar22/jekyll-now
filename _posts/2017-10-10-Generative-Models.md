@@ -18,8 +18,7 @@ This post is organised as follows:
 - [Difficulties in training Plain GANs](#Plain-GANs)
 - [Training Details](#training-details)
 - [Experiments of VAEs and GANs on MNIST](#exp_mnist)
-  - [Training Discriminator (of GAN) without labels](#exp_mnist_no_labels)
-  - [Training Discriminator (of GAN) with labels](#exp_mnist_with_labels)
+  - [Training Discriminator (of GAN)](#exp_mnist_no_labels)
 - [Experiments of VAEs and GANs on CIFAR](#exp_cifar)
 - [Further Reading](#further_reading)
 
@@ -173,16 +172,14 @@ Implementation of the above losses in `python` and `tensorflow` is as follows:
                     labels=self.labels, logits=self.fake_logit, dim=1)
 
       d_loss = d_true_loss + d_fake_loss
-      return tf.reduce_mean(d_loss), tf.reduce_mean(g_loss)
-  </code>
+      return tf.reduce_mean(d_loss), tf.reduce_mean(g)
+
 </pre>
 
  -->
-<a name='exp_mnist'></a>
-## Experiments of VAEs and GANs on MNIST
 
 <a name='exp_mnist_no_labels'></a>
-### #1 Training Discriminator without using labels
+### #1 Training Discriminator
 
 I trained a VAE on MNIST. The code of which can be found [here](https://github.com/kvmanohar22/Generative-Models). MNIST consists of binary 28 $$\times$$28 images.
 
@@ -242,16 +239,6 @@ Below is the gif of the images generated from GAN as a function of number of epo
 
 Clearly, images generated from VAE are kind of blurry compared to the ones generated from GAN which are much sharp. Well, this shouldn't come as a surprise and the result is expected. This is because, of all the possible outcomes VAE model generates from the distribution, it averages them. To reduce the bluriness in the images, $$L1$$ loss can be employed instead of $$L2$$ loss.
 
-
-<a name='exp_mnist_with_labels'></a>
-### #2 Training Discriminator using labels
-#### Coming soon...
-
-
-<a name='exp_cifar'></a>
-## Experiments of VAEs and GANs on CIFAR
-
-#### Coming soon...
 
 
 <a name='further_reading'></a>
