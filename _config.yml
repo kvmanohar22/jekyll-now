@@ -14,6 +14,8 @@ avatar: https://s29.postimg.org/g02v2d713/14894383_647646338729073_9172075265_o.
 #
 # Flags below are optional
 #
+includes:
+- _summary
 
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -63,12 +65,13 @@ kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
   # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  auto_ids: true
   syntax_highlighter: rouge
   # syntax_highlighter_opts:
     # Use existing pygments syntax highlighting css
   css_class: 'highlight'
 
-# markdown: redcarpet
+markdown: kramdown
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed
@@ -77,6 +80,7 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+#  - jemoji
 
 # Exclude these files from your production _site
 exclude:
