@@ -41,7 +41,7 @@ permalink: /about/
          <i class="fa fa-google-plus fa-2x"></i>
        </a>
        <span style="display:inline-block; width: 30px;"></span>
-       <a href="https://facebook.com/kvmanohar22">
+       <a href="https://facebook.com/kv.manohar.984">
          <i class="fa fa-facebook fa-2x"></i>
        </a>
        <span style="display:inline-block; width: 30px;"></span>
@@ -65,8 +65,8 @@ permalink: /about/
 </center>
 
 
-I am a third year undergraduate student in the Department of Mathematics enrolled in it's integrated course of Mathematics and Computing at Indian Institute of Technology, Kharagpur. I am particularly interested in Machine Learning, more specifically in Deep Learning, Computer Vision and Robotics. I'm fascinated by the application of Deep Learning methods in solving problems from domains as varied as Robotics, Computer Vision, Health, Biology and so on.
+I am a fourth year undergraduate student in the Department of Mathematics enrolled in it's integrated course of Mathematics and Computing at Indian Institute of Technology, Kharagpur. I am particularly interested in Computer Vision, Autonomous Navigation and Robotics.
 {: style="text-align: justify"}
 
-I maintain this blog as a medium of expressing myself on my adventures as a learner. I am still a learner myself and I found writing stuff as the best way to understand. The posts typically would be related to Computer Vision, Deep Learning and Robotics, the fields that I'm most excited about.
+I maintain this blog as a medium of expressing myself on my adventures as a learner. I am still a learner myself and I found writing stuff as the best way to understand. The posts typically would be related to Computer Vision and Robotics, the fields that I'm most excited about.
 {: style="text-align: justify"}
