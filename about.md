@@ -67,6 +67,8 @@ permalink: /about/
 </div>
 </center>
 
+_**The eye can never arrive at a perfect knowledge of the interval between two objects by means of the linear perspective alone, if not assisted by the perspective of colors. Let the colors vanish in proportion as the objects diminish in size, according to the distance.**._ --- Leonardo da Vinci
+
 
 I am a fourth year undergraduate student in the Department of Mathematics enrolled in it's integrated course of Mathematics and Computing at Indian Institute of Technology, Kharagpur. I am particularly interested in Computer Vision, Depth Estimation, Autonomous Navigation and Robotics.
 
