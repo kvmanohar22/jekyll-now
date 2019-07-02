@@ -9,7 +9,7 @@ comments: true
 <script src="./../js/prism.js"></script>
 
 
-This post is part of the code that I released on [github](https://github.com/kvmanohar22/Generative-Models) written in Tensorflow. This post summarizes on the problem of modelling a given data distribution using **Variational Autoencoders (VAEs)** and **Generative Adversarial Networks (GANs)** and comparing the performance of these models. One might ask, why generate images from a given data distribution when we already have millions of images around ? As pointed out by Ian Goodfellow in the NIPS tutorial, there are many applications indeed. One which I found very interesting was the use of GANs (once we have perfected them) in simulating possible futures for an agent in Reinforcement Learning using Policy Gradients.
+This post is part of the code that I released on [github](https://github.com/kvmanohar22/Generative-Models) written in Tensorflow. This post summarizes on the problem of modelling a given data distribution using **Variational Autoencoders (VAEs)** and **Generative Adversarial Networks (GANs)** and comparing the performance of these models. One might ask, why generate images from a given data distribution when we already have millions of images around ? As pointed out by Ian Goodfellow in the NIPS tutorial, there are many applications indeed. One which I found very interesting was the use of GANs (once we have perfected them) in simulating possible futures for an agent using Reinforcement Learning
 
 This post is organised as follows:
 
