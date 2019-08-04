@@ -89,7 +89,7 @@ p(\mathcal{D} \mid \hat d, \rho) & = \prod_{k=r+1}^{r+n}p(d_k \mid \hat d, \rho)
 \end{align}
 $$
 
-The parameters of the above likelihood can be obtained in a maximum likelihood framework using Expectation Maximization. But as noted in [XX], the experiments seemed to be trapped in a local optimum. Other way round? Sequential Bayesian updates to the rescue!
+The parameters of the above likelihood can be obtained in a maximum likelihood framework using Expectation Maximization. But as noted in [1], the experiments seemed to be trapped in a local optimum. Other way round? Sequential Bayesian updates to the rescue!
 
 Posterior takes the form;
 
@@ -97,7 +97,7 @@ $$
 p\left(\hat d, \rho \mid \mathcal{D} \right) \propto p\left(\hat d, \rho \right) \prod_{k} \left(d_k \mid \hat d, \rho \right)
 $$
 
-where \\(p\left(\hat d, \rho \right)\\) is the prior on depth and inlier ratio which is assumed to be uniform and modeled using a dense 2d histogram. Authors of [X] show that above posterior can be modelled using product of a Gaussian distribution for the depth and a Beta distribution for the inlier ratio.
+where \\(p\left(\hat d, \rho \right)\\) is the prior on depth and inlier ratio which is assumed to be uniform and modeled using a dense 2d histogram. Authors of [1] show that above posterior can be modelled using product of a Gaussian distribution for the depth and a Beta distribution for the inlier ratio.
 
 $$
 q \left(\hat d, \rho \mid a_k, b_k, \mu_k, \sigma_k^2 \right) = \beta \left(\rho \mid a_k, b_k\right) \mathcal{N}(\hat d \mid \mu_k, \sigma_k^2)
@@ -135,7 +135,7 @@ Similarly; mean and variance wrt \\(\rho\\) in equation 1 are \\(\frac{a'}{a'+b'
 
 #### Moments of actual posterior
 
-Substitute equation X in (2) to get;
+Substitute the density model in (2) to get;
 
 $$
 \begin{align}
