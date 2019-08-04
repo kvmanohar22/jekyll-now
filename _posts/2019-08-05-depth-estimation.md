@@ -56,12 +56,12 @@ where \\(\left[u_1\right]_{\text{x}}\\) is skew symmetric matrix representation 
 How do we represent depth of a pixel in a parametric way? How do we parameterize the depth in the first place? Read along to find out!
 
 <p align="center"><img width="60%" height="30%" src="./../images/blog/setup.svg"/></p>
-**Fig X**: Setup
+**Fig 1**: Setup
 
-From Figure X, let \\({\bf u}=\left(u, v\right)^T\\) be a pixel in image \\(\mathcal{I}\\). For a given depth \\(z\\), let \\({\bf p} = \left(x, y, z\right)^T\\) be the corresponding 3D point along the optical ray through pixel \\({\bf u}\\). Let \\(\mathcal{I'}\\) be another image that has \\({\bf p}\\) in it's field-of-view with \\({\bf u'}=\left(u', v'\right)^T\\) being back-projected point in the image. Let \\(W\\) and \\(W'\\) be patches around \\({\bf u}\\) and \\({\bf u'}\\) respectively. Figure X(a) shows the Normalized Cross Correlation score for patches \\(W\\) and \\(W'\\) as \\(z\\) is varied along the optic ray through \\({\bf u}\\). Figure X(b) shows on the other hand shows histogram of depth \\(z\\) for 60 neighbouring images measured along the optic ray through \\({\bf u}\\).
+From Figure 1, let \\({\bf u}=\left(u, v\right)^T\\) be a pixel in image \\(\mathcal{I}\\). For a given depth \\(z\\), let \\({\bf p} = \left(x, y, z\right)^T\\) be the corresponding 3D point along the optical ray through pixel \\({\bf u}\\). Let \\(\mathcal{I'}\\) be another image that has \\({\bf p}\\) in it's field-of-view with \\({\bf u'}=\left(u', v'\right)^T\\) being back-projected point in the image. Let \\(W\\) and \\(W'\\) be patches around \\({\bf u}\\) and \\({\bf u'}\\) respectively. Figure 2(a) shows the Normalized Cross Correlation score for patches \\(W\\) and \\(W'\\) as \\(z\\) is varied along the optic ray through \\({\bf u}\\). Figure 2(b) shows on the other hand shows histogram of depth \\(z\\) for 60 neighbouring images measured along the optic ray through \\({\bf u}\\).
 
 <p align="center"><img width="100%" height="30%" src="./../images/blog/depth_histo.png"/></p>
-**Fig 1** Image source [1]
+**Fig 2** Image source [1]
 
 <br>
 
