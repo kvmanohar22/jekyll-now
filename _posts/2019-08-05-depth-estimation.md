@@ -242,7 +242,7 @@ $$
 Assuming independent initial prior, we have \\(p\left(\rho, \hat d\right) = p(\rho)p(\hat d)\\). Introducing the latent variable \\(z_k\\); we have the following;
 
 $$
-p\left(d_k \mid \hat d, \rho, z_k \right) = \mathcal{N} \left(d_k \mid \hat d, {\tau}_k^2 \right)^{z_k} + \mathcal{U}(d_k)^{1-z_k} \tag{9}
+p\left(d_k \mid \hat d, \rho, z_k \right) = \mathcal{N} \left(d_k \mid \hat d, {\tau}_k^2 \right)^{z_k} \mathcal{U}(d_k)^{1-z_k} \tag{9}
 $$
 
 and 
