@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 ---
 
 <div class="wrapper-masthead">
@@ -17,8 +17,10 @@ layout: page
   </div>
 </div>
 
+Some unsorted misc here.
 
-<!-- In my free time I [read books](https://www.goodreads.com/review/list/57503879-kv-manohar?shelf=currently-reading) -->
+
+[Reading Challenge 2019](../wall/reading)
 
 
   <style type="text/css" media="screen">
