@@ -1,7 +1,28 @@
 ---
-layout: page
+layout: default
 title: Publications
 ---
+
+<link href="/css/bamos.css" rel="stylesheet">
+<link href="/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+  crossorigin="anonymous">
+
+
+<div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      <a href="/"><font size="22" color="black"><span>&#126;</span></font></a>
+      <nav>
+        <a href="{{ site.baseurl }}/blog"><font size="5" color="black">~</font>/blog</a>
+        <a href="{{ site.baseurl }}/talks"><font size="5" color="black">~</font>/talks</a>
+        <a href="{{ site.baseurl }}/pubs"><font size="5" color="black">~</font>/publications</a> 
+        <a href="{{ site.baseurl }}/contact"><font size="5" color="black">~</font>/contact</a> 
+        <!-- <a href="{{ site.baseurl }}/wall"><font size="5" color="black">~</font>/wall</a> -->
+      </nav>
+    </header>
+  </div>
+</div>
 
 - **An End-to-end Tree based approach for Instance Segmentation** (<u>spotlight</u>)\\
   **KV Manohar**, Yusuke Niitani\\

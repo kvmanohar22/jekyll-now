@@ -31,42 +31,6 @@ permalink: /about/
    </div>
 </center>
 
-<center>
-<div class="row">
-    <div class="col-md-6">
-      <style type="text/css">margin-top: 15em</style>
-
-       <a href="https://scholar.google.co.in/citations?user=U_T1aPEAAAAJ&hl=en">
-         <i class="fa fa-graduation-cap fa-2x"></i>
-       </a>
-       <span style="display:inline-block; width: 30px;"></span>
-       <a href="https://plus.google.com/108369249168049684654">
-         <i class="fa fa-google-plus fa-2x"></i>
-       </a>
-       <span style="display:inline-block; width: 30px;"></span>
-       <a href="https://facebook.com/kv.manohar.984">
-         <i class="fa fa-facebook fa-2x"></i>
-       </a>
-       <span style="display:inline-block; width: 30px;"></span>
-       <a href="https://twitter.com/kvmanohar22">
-         <i class="fa fa-twitter fa-2x"></i>
-       </a>
-       <span style="display:inline-block; width: 30px;"></span>
-       <a href="https://github.com/kvmanohar22">
-         <i class="fa fa-github fa-2x"></i>
-       </a>
-       <span style="display:inline-block; width: 30px;"></span>
-       <a href="https://linkedin.com/in/kvmanohar22">
-         <i class="fa fa-linkedin fa-2x"></i>
-       </a>
-       <span style="display:inline-block; width: 30px;"></span>
-       <a href="mailto:kvmanohar22@gmail.com">
-         <i class="fa fa-envelope fa-2x"></i>
-       </a>
-    </div>
-</div>
-</center>
-
 _**The eye can never arrive at a perfect knowledge of the interval between two objects by means of the linear perspective alone, if not assisted by the perspective of colors. Let the colors vanish in proportion as the objects diminish in size, according to the distance.**._ --- Leonardo da Vinci
 
 
