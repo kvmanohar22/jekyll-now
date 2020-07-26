@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Publications
+title: publications
 ---
 
 <link href="/css/bamos.css" rel="stylesheet">

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Talks
+title: talks
 ---
 
 <link href="/css/bamos.css" rel="stylesheet">
