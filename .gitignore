@@ -9,4 +9,15 @@ Gemfile.lock
 node_modules
 package.json
 .jekyll-cache
-
+**.aux
+**.blg
+**.bbl
+**.cls
+**.tex
+**.bst
+**.bib
+**.fdb_latexmk
+**.log
+**.fls
+**.out
+**.gz

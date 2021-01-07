@@ -1,1 +1,0 @@
-# KV Manohar's blog

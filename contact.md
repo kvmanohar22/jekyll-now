@@ -23,4 +23,4 @@ title: contact
   </div>
 </div>
 
-My existence in this world is limited to [github](https://github.com/kvmanohar22) and where I live. You can reach me at: kvmanohar22 (at) gmail (dot) com.
+You can reach me at: kvmanohar22 (at) gmail (dot) com.
