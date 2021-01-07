@@ -31,8 +31,35 @@ The ones in <font color="green">#green</font> are done while the ones in <font c
 
 ## 2021
 
-| Week #  | Date Added  |             Title                    | Description                                                                                                                                                        | Resources                                                                                                   |
-|---------|-------------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-|   01    |    07/01    | Attitude Estimation                  | Discusses estimation of attitude using three different parameterizations (euler, DCM, quaternions). Also discussed is their covariance propagation                 | [notes]({{ site.baseurl }}/notes/w02/main.pdf) [code](https://github.com/kvmanohar22/attitude_estimation) |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;}
+.tg td{background-color:#fdf6e3;border-bottom-width:1px;border-color:#93a1a1;border-style:solid;border-top-width:1px;
+  border-width:0px;color:#002b36;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;
+  word-break:normal;}
+.tg th{background-color:#657b83;border-bottom-width:1px;border-color:#93a1a1;border-style:solid;border-top-width:1px;
+  border-width:0px;color:#fdf6e3;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;
+  padding:10px 5px;word-break:normal;}
+.tg .tg-2bhk{background-color:#efefef;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
 
-
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky"><b>#</b></th>
+    <th class="tg-0pky"><b>Date</b></th>
+    <th class="tg-0pky"><b>Title</b></th>
+    <th class="tg-0pky"><b>Description</b></th>
+    <th class="tg-0pky"><b>Resources</b></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-2bhk"><font color="green">01</font></td>
+    <td class="tg-2bhk">07/01</td>
+    <td class="tg-2bhk">Attitude Estimation</td>
+    <td class="tg-2bhk">Discusses estimation of attitude using three different parameterizations (euler, DCM, quaternions). Also discussed is their covariance propagation</td>
+    <td class="tg-2bhk"><a href="https://kvmanohar22.github.io/notes/w02/main.pdf">notes</a>, <a href="https://github.com/kvmanohar22/attitude_estimation">code</a></td>
+  </tr>
+</tbody>
+</table>
