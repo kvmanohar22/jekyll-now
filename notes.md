@@ -59,7 +59,14 @@ The ones in <font color="green">#green</font> are done while the ones in <font c
     <td class="tg-2bhk">07/01</td>
     <td class="tg-2bhk">Attitude Estimation</td>
     <td class="tg-2bhk">Discusses estimation of attitude using three different parameterizations (euler, DCM, quaternions). Also discussed is their covariance propagation</td>
-    <td class="tg-2bhk"><a href="https://kvmanohar22.github.io/notes/w02/main.pdf">notes</a>, <a href="https://github.com/kvmanohar22/attitude_estimation">code</a></td>
+    <td class="tg-2bhk"><a href="https://kvmanohar22.github.io/notes/w01/main.pdf">notes</a>, <a href="https://github.com/kvmanohar22/attitude_estimation">code</a></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><font color="green">02</font></td>
+    <td class="tg-0pky">15/01</td>
+    <td class="tg-0pky">On-Manifold Preintegration Theory for Fast and Accurate Visual-Inertial Navigation</td>
+    <td class="tg-0pky">Discusses an approach for closely-coupled visual inertial navigation</td>
+    <td class="tg-0pky"><a href="https://kvmanohar22.github.io/notes/w02/main.pdf">notes</a></td>
   </tr>
 </tbody>
 </table>
