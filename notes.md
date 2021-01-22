@@ -27,8 +27,6 @@ This is a list of summaries of papers related to Robotics/CV that I intend to wr
 
 These notes are created for my own understanding and there could be typos, so take them with a pinch of salt in both correctness and conclusions that I draw from them.
 
-The ones in <font color="green">#green</font> are done while the ones in <font color="red">#red</font> are to be added.
-
 ## 2021
 
 <style type="text/css">
@@ -57,16 +55,23 @@ The ones in <font color="green">#green</font> are done while the ones in <font c
   <tr>
     <td class="tg-2bhk"><font color="green">01</font></td>
     <td class="tg-2bhk">07/01</td>
-    <td class="tg-2bhk">Attitude Estimation</td>
-    <td class="tg-2bhk">Discusses estimation of attitude using three different parameterizations (euler, DCM, quaternions). Also discussed is their covariance propagation</td>
+    <td class="tg-2bhk">Attitude Estimation.</td>
+    <td class="tg-2bhk">Discusses estimation of attitude using three different parameterizations (euler, DCM, quaternions). Also discussed is their covariance propagation.</td>
     <td class="tg-2bhk"><a href="https://kvmanohar22.github.io/notes/w01/main.pdf">notes</a>, <a href="https://github.com/kvmanohar22/attitude_estimation">code</a></td>
   </tr>
   <tr>
     <td class="tg-0pky"><font color="green">02</font></td>
     <td class="tg-0pky">15/01</td>
-    <td class="tg-0pky">On-Manifold Preintegration Theory for Fast and Accurate Visual-Inertial Navigation</td>
-    <td class="tg-0pky">Discusses an approach for closely-coupled visual inertial navigation</td>
+    <td class="tg-0pky">On-Manifold Preintegration Theory for Fast and Accurate Visual-Inertial Navigation.</td>
+    <td class="tg-0pky">Discusses an approach for closely-coupled visual inertial navigation.</td>
     <td class="tg-0pky"><a href="https://kvmanohar22.github.io/notes/w02/main.pdf">notes</a></td>
+  </tr>
+  <tr>
+    <td class="tg-2bhk"><font color="green">03</font></td>
+    <td class="tg-2bhk">22/01</td>
+    <td class="tg-2bhk">Visual-Inertial-Aided Navigation for High-Dynamic Motion in Built Environments Without Initial Conditions.</td>
+    <td class="tg-2bhk">Discusses the work that introduced the concept of preintegration of inertial measurements which was an inspiration for the work summarized in <font color="green">02</font>.</td>
+    <td class="tg-2bhk"><a href="https://kvmanohar22.github.io/notes/w03/main.pdf">notes</a></td>
   </tr>
 </tbody>
 </table>
