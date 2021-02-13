@@ -2,18 +2,92 @@
   "comment": "This is a list of papers which is used to render in my system locally. Better way to organize, search the papers rather than piling up papers scattered in all the directories.",
   "data": [
     [
-      "01/02/2021", 
-      "ETHZ-ASL",
-      "Voxblox: Incremental 3D Euclidean Signed Distance Fields for On-Board MAV Planning",
-      "arXiv",
-      "21-02"
-    ], 
-    [
       "13/02/2021",
       "UZH-RPG",
       "Beyond Point Clouds: Fisher Information Field for Active Visual Localization",
       "ICRA, 2019",
-      "21-02"
+      "21-02",
+      "Randomly stubmled"
+    ]
+    [
+      "01/02/2021", 
+      "ETHZ-ASL",
+      "Voxblox: Incremental 3D Euclidean Signed Distance Fields for On-Board MAV Planning",
+      "arXiv",
+      "21-02",
+      "Found as a reference from Kimera"
+    ],
+    [
+      "01/02/2021", 
+      "Rosinol et al.",
+      "Kimera: an Open-Source Library for Real-Time Metric-Semantic Localization and Mapping"
+      "ICRA-2020",
+      "21-01",
+      "Randomly stubmled"
+    ],
+    [
+      "01/02/2021", 
+      "Rosinol et al.",
+      "Incremental Visual-Inertial 3D Mesh Generation with Structural Regularities",
+      "ICRA-2019",
+      "21-01",
+      "Kimera reference"
+    ],
+    [
+      "15/01/2021", 
+      "Kaess Michael",
+      "Simultaneous Localization and Mapping with Infinite Planes",
+      "ICRA-2015",
+      "21-01",
+      "Kimera reference"
+    ],
+    [
+      "06/01/2021", 
+      "Leutenegger et al.",
+      "Keyframe-based visual–inertial odometry using nonlinear optimization",
+      "IJRR-2014",
+      "21-01",
+      "As a follow-up to the on-manifold preintegration theory paper. The method present here need to reintegrate the measurements when linearization point changes during optimization. This is avoided in 'On-manifold... paper'."
+    ],
+    [
+      "04/01/2021", 
+      "Mourikis et al.",
+      "A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation",
+      "ICRA-2007",
+      "21-01",
+      "As a follow-up to the on-manifold preintegration theory paper. Specifically on the idea of elimination of landmarks from state. This idea has been re-visited and exploited in 'On-manifold...' paper."
+    ],
+    [
+      "01/01/2021", 
+      "Martinelli Agostino",
+      "Observability Properties and Deterministic Algorithms in Visual-Inertial Structure from Motion",
+      "FTR-2013",
+      "21-01",
+      "As a follow-up to the on-manifold preintegration theory paper. This work presents detailed overview on observability analysis of VIO."
+    ],
+    [
+      "30/12/2020", 
+      "Posch et al.",
+      "Bio inspired vision",
+      "TOPICAL WORKSHOP ON ELECTRONICS 2011",
+      "20-12",
+      "Read this paper on the biological inspiration to event-based cameras."
+    ],
+    [
+      "30/12/2020", 
+      "Posch et al.",
+      "How Neuromorphic Image Sensors Steal Tricks From the Human Eye",
+      "IEEE",
+      "20-12",
+      "Read this paper on the biological inspiration to event-based cameras. Takes us way back to 1872 of Muybridge's animal locomotion."
+    ],
+    [
+      "15/12/2020", 
+      "Lupton et al.",
+      "Visual-Inertial-Aided Navigation for High-Dynamic Motion in Built Environments Without Initial Conditions",
+      "ICRA-2011",
+      "20-12",
+      "As a follow-up to the on-manifold preintegration theory paper. This paper presents the seminal work on preintegration theory that was motivation in 'On manifold...'."
     ]
   ]
 }
