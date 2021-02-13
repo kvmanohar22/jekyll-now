@@ -1,30 +1,18 @@
-// This is a list of papers which is used to render in my system locally
-// Better way to organize, search the papers rather than piling up papers 
-// scattered in all the directories.
-
 {
+  "comment": "This is a list of papers which is used to render in my system locally. Better way to organize, search the papers rather than piling up papers scattered in all the directories.",
   "data": [
     [
-      // date added
       "01/02/2021", 
-
-      // research group / authors
-      "ETHZ-ASL"
-
-      // paper title
-      "Voxblox: Incremental 3D Euclidean Signed Distance Fields for On-Board MAV Planning"
-
-      // publication conference
-      "arXiv"
-
-      // location of the paper in my local system
+      "ETHZ-ASL",
+      "Voxblox: Incremental 3D Euclidean Signed Distance Fields for On-Board MAV Planning",
+      "arXiv",
       "21-02"
     ], 
     [
-      "13/02/2021", 
-      "UZH-RPG"
-      "Beyond Point Clouds: Fisher Information Field for Active Visual Localization"
-      "ICRA, 2019"
+      "13/02/2021",
+      "UZH-RPG",
+      "Beyond Point Clouds: Fisher Information Field for Active Visual Localization",
+      "ICRA, 2019",
       "21-02"
     ]
   ]
