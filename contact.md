@@ -17,7 +17,6 @@ title: contact
         <a href="{{ site.baseurl }}/pubs"><font size="5" color="black">~</font>/publications</a> 
         <a href="{{ site.baseurl }}/notes"><font size="5" color="black">~</font>/notes</a>
         <a href="{{ site.baseurl }}/contact"><font size="5" color="black">~</font>/contact</a> 
-        <!-- <a href="{{ site.baseurl }}/wall"><font size="5" color="black">~</font>/wall</a> -->
       </nav>
     </header>
   </div>
