@@ -22,4 +22,4 @@ title: contact
   </div>
 </div>
 
-You can reach me at: kvmanohar22 (at) gmail (dot) com.
+You can reach me at: manohark (at) nvidia (dot) com.
